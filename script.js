@@ -25,3 +25,22 @@ $('div').css({
     height: "100px",
     backgroundColor: "cyan"
 })
+
+// $('div').click(function(){
+//     alert('Div is Clicked');
+// });
+
+// $('div').on('click',function(){
+//     alert('Div is Clicked');
+// })
+
+$('div').on('click',function(event){
+    var element=$(this);
+    element.width(element.width()+ 10 +"px");
+    alert('Div Clicked')
+})
+$('a').on('click',function(event){
+    event.preventDefault();
+    alert('Anchore tag is Clicked');
+})
+
